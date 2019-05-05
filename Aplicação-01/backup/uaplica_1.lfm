@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 309
+  Height = 240
+  Top = 152
+  Width = 366
+  Caption = 'Aplicação - 1'
+  ClientHeight = 240
+  ClientWidth = 366
+  LCLVersion = '2.0.2.0'
+  object Label1: TLabel
+    Left = 42
+    Height = 23
+    Top = 49
+    Width = 104
+    Caption = 'Cadastro:'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object txtCaixa: TEdit
+    Left = 160
+    Height = 34
+    Top = 40
+    Width = 155
+    OnChange = txtCaixaChange
+    TabOrder = 0
+    Text = 'txtCaixa'
+  end
+  object btnLimpar: TButton
+    Left = 40
+    Height = 25
+    Top = 168
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = btnLimparClick
+    TabOrder = 1
+  end
+  object btnInserir: TButton
+    Left = 240
+    Height = 25
+    Top = 168
+    Width = 75
+    Caption = 'Inserir'
+    OnClick = btnInserirClick
+    TabOrder = 2
+  end
+end

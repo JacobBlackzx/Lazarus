@@ -14,10 +14,12 @@ type
   TForm1 = class(TForm)
     btnLimpar: TButton;
     btnInserir: TButton;
+    btnSair: TButton;
     txtCaixa: TEdit;
     Label1: TLabel;
     procedure btnInserirClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
     procedure txtCaixaChange(Sender: TObject);
     procedure Label1Click(Sender: TObject);
   private
@@ -48,6 +50,12 @@ end;
 procedure TForm1.btnLimparClick(Sender: TObject);
 begin
   txtCaixa.text:='Limpar Caixa de Texto';
+end;
+
+procedure TForm1.btnSairClick(Sender: TObject);
+begin
+  ShowMessage('Até Breve !');
+  Application.Terminate;
 end;
 
 procedure TForm1.btnInserirClick(Sender: TObject);

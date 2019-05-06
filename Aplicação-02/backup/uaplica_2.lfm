@@ -1,0 +1,57 @@
+object Form1: TForm1
+  Left = 461
+  Height = 240
+  Top = 215
+  Width = 525
+  Caption = 'Aplicação - 2'
+  ClientHeight = 240
+  ClientWidth = 525
+  LCLVersion = '2.0.2.0'
+  object btnMostrarMensagem: TButton
+    Left = 31
+    Height = 41
+    Top = 168
+    Width = 176
+    Caption = 'Mostrar Mensagem'
+    OnClick = btnMostrarMensagemClick
+    TabOrder = 0
+  end
+  object edtNome: TEdit
+    Left = 200
+    Height = 34
+    Top = 56
+    Width = 277
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 31
+    Height = 17
+    Top = 64
+    Width = 110
+    Caption = 'Digite seu Nome'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 31
+    Height = 17
+    Top = 96
+    Width = 147
+    Caption = 'Digite seu Sobrenome'
+    ParentColor = False
+  end
+  object edtSobrenome: TEdit
+    Left = 200
+    Height = 34
+    Top = 96
+    Width = 277
+    TabOrder = 2
+  end
+  object chkMostrarSobrenome: TCheckBox
+    Left = 31
+    Height = 23
+    Top = 128
+    Width = 146
+    Caption = 'Exibir Sobrenome'
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,26 @@
+object frmVariaveis: TfrmVariaveis
+  Left = 318
+  Height = 240
+  Top = 155
+  Width = 490
+  Caption = 'Variaveis'
+  ClientHeight = 240
+  ClientWidth = 490
+  LCLVersion = '2.0.2.0'
+  object btnProcessa: TButton
+    Left = 168
+    Height = 41
+    Top = 152
+    Width = 115
+    Caption = 'Processa'
+    OnClick = btnProcessaClick
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 80
+    Height = 110
+    Top = 24
+    Width = 318
+    TabOrder = 1
+  end
+end

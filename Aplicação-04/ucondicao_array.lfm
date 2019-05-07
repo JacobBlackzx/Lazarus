@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 440
+  Height = 251
+  Top = 118
+  Width = 403
+  Caption = 'Condição Array'
+  ClientHeight = 251
+  ClientWidth = 403
+  LCLVersion = '2.0.2.0'
+  object btnProcessa: TButton
+    Left = 24
+    Height = 33
+    Top = 200
+    Width = 83
+    Caption = 'Processa'
+    OnClick = btnProcessaClick
+    TabOrder = 0
+  end
+  object btnSair: TButton
+    Left = 293
+    Height = 33
+    Top = 200
+    Width = 83
+    Caption = 'Sair'
+    OnClick = btnSairClick
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 24
+    Height = 128
+    Top = 48
+    Width = 352
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 16
+    Width = 100
+    Caption = 'Informe a Data'
+    ParentColor = False
+  end
+  object edtData: TEdit
+    Left = 136
+    Height = 34
+    Top = 8
+    Width = 128
+    TabOrder = 3
+  end
+end

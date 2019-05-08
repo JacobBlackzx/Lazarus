@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1540814642"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fi/home/vicktorzx/Documentos/Cursos/Cursos Livres/Desenvolvimento/Lazarus/lib/x86_64-linux&quot; -Fu/usr/share/lazarus/2.0.2/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.0.2/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.0.2/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.2/packager/units/x86_64-linux &quot;-Fu/home/vicktorzx/Documentos/Cursos/Cursos Livres/Desenvolvimento/Lazarus/&quot; &quot;-FU/home/vicktorzx/Documentos/Cursos/Cursos Livres/Desenvolvimento/Lazarus/lib/x86_64-linux/&quot; &quot;-FE/home/vicktorzx/Documentos/Cursos/Cursos Livres/Desenvolvimento/Lazarus/&quot; &quot;-o/home/vicktorzx/Documentos/Cursos/Cursos Livres/Desenvolvimento/Lazarus/agenda&quot; -dLCL -dLCLgtk2 agenda.lpr"/>
+</CONFIG>

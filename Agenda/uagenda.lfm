@@ -1,0 +1,193 @@
+object frmAgenda: TfrmAgenda
+  Left = 612
+  Height = 492
+  Top = 143
+  Width = 587
+  Caption = 'Agenda'
+  ClientHeight = 492
+  ClientWidth = 587
+  LCLVersion = '2.0.2.0'
+  object labCodigo: TLabel
+    Left = 64
+    Height = 17
+    Top = 40
+    Width = 48
+    Caption = 'Código'
+    ParentColor = False
+  end
+  object edtCodigo: TEdit
+    Left = 122
+    Height = 34
+    Top = 32
+    Width = 80
+    TabOrder = 0
+  end
+  object Nome: TLabel
+    Left = 71
+    Height = 17
+    Top = 80
+    Width = 41
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  object labEndereco: TLabel
+    Left = 42
+    Height = 17
+    Top = 184
+    Width = 63
+    Caption = 'Endereço'
+    ParentColor = False
+  end
+  object edtNome: TEdit
+    Left = 122
+    Height = 34
+    Top = 72
+    Width = 272
+    TabOrder = 1
+  end
+  object edtEndereco: TEdit
+    Left = 122
+    Height = 34
+    Top = 176
+    Width = 272
+    TabOrder = 2
+  end
+  object labComplemento: TLabel
+    Left = 16
+    Height = 17
+    Top = 224
+    Width = 96
+    Caption = 'Complemento'
+    ParentColor = False
+  end
+  object labTelefone_Res: TLabel
+    Left = 17
+    Height = 17
+    Top = 264
+    Width = 95
+    Caption = 'Telefone (Res)'
+    ParentColor = False
+  end
+  object labTelefone_Serv: TLabel
+    Left = 16
+    Height = 17
+    Top = 304
+    Width = 100
+    Caption = 'Telefone (Serv)'
+    ParentColor = False
+  end
+  object labCelular: TLabel
+    Left = 65
+    Height = 17
+    Top = 360
+    Width = 47
+    Caption = 'Celular'
+    ParentColor = False
+  end
+  object labEmail: TLabel
+    Left = 71
+    Height = 17
+    Top = 400
+    Width = 41
+    Caption = 'E-mail'
+    ParentColor = False
+  end
+  object edtComplemento: TEdit
+    Left = 123
+    Height = 34
+    Top = 216
+    Width = 271
+    TabOrder = 3
+  end
+  object edtTelefone_Res: TEdit
+    Left = 123
+    Height = 34
+    Top = 256
+    Width = 271
+    TabOrder = 4
+  end
+  object edtTelefone_Serv: TEdit
+    Left = 123
+    Height = 34
+    Top = 296
+    Width = 272
+    TabOrder = 5
+  end
+  object edtCelular: TEdit
+    Left = 123
+    Height = 34
+    Top = 352
+    Width = 271
+    TabOrder = 6
+  end
+  object edtEmail: TEdit
+    Left = 123
+    Height = 34
+    Top = 392
+    Width = 272
+    TabOrder = 7
+  end
+  object labSobrenome: TLabel
+    Left = 32
+    Height = 17
+    Top = 120
+    Width = 78
+    Caption = 'Sobrenome'
+    ParentColor = False
+  end
+  object edtSobrenome: TEdit
+    Left = 121
+    Height = 34
+    Top = 112
+    Width = 272
+    TabOrder = 8
+  end
+  object btnPrimeiro: TButton
+    Left = 8
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = '|< Primeiro'
+    TabOrder = 9
+  end
+  object btnAnterior: TButton
+    Left = 103
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = '< Anterior'
+    TabOrder = 10
+  end
+  object btnProximo: TButton
+    Left = 199
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = 'Próximo >'
+    TabOrder = 11
+  end
+  object btnUltimo: TButton
+    Left = 295
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = 'Último >|'
+    TabOrder = 12
+  end
+  object btnNovo: TButton
+    Left = 391
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = 'Novo'
+    TabOrder = 13
+  end
+  object btnIncluir: TButton
+    Left = 487
+    Height = 25
+    Top = 456
+    Width = 91
+    Caption = 'Incluir'
+    TabOrder = 14
+  end
+end

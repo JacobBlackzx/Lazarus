@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/home/espectro/Especializações/Desenvolvimento/Lazarus/fluxocaixa/view/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.4/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.2.4/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.2.4/components/freetype/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.4/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.4/packager/units/x86_64-linux -Fu/home/espectro/Especializações/Desenvolvimento/Lazarus/fluxocaixa/view/ -FU/home/espectro/Especializações/Desenvolvimento/Lazarus/fluxocaixa/view/lib/x86_64-linux/ -FE/home/espectro/Especializações/Desenvolvimento/Lazarus/fluxocaixa/view/ -o/home/espectro/Especializações/Desenvolvimento/Lazarus/fluxocaixa/view/fluxocaixa -dLCL -dLCLgtk2 fluxocaixa.lpr"/>
+</CONFIG>

@@ -13,13 +13,14 @@ type
   { Tfrmprincipal }
 
   Tfrmprincipal = class(TForm)
-    Label1: TLabel;
+    lblFluxoCaixa: TLabel;
     pnpEsquerda: TPanel;
-    Shape1: TShape;
+    shaLinha: TShape;
     btnContas: TSpeedButton;
     btnPlanos: TSpeedButton;
-    btnLancamentos: TSpeedButton;
+    btnLancamento: TSpeedButton;
     btnSair: TSpeedButton;
+    btnConfigura: TSpeedButton;
     procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
@@ -37,30 +38,30 @@ implementation
 
 { Tfrmprincipal }
 
-procedure Tfrmprincipal.FormCreate(Sender: TObject);
-begin
-    {$IFDEF LINUX}
-    // Formatação de moeda
-    CurrencyString := 'R$';
-    CurrencyFormat := 2;
-    DecimalSeparator := ',';
-    ThousandSeparator := '.';
-
-    // Formatação de datas
-    DateSeparator := '/';
-    ShortDateFormat := 'dd/mm/yyyy';
-    {$ENDIF}
-end;
-
 procedure Tfrmprincipal.btnSairClick(Sender: TObject);
 begin
-    ShowMessage('Até Breve!!!');
-    Application.Terminate;
+// Construtor para habilitar evento sair do botão Sair da Tela Principal
+  ShowMessage('Até Breve !!!');
+  Application.Terminate;
 end;
 
+procedure Tfrmprincipal.FormCreate(Sender: TObject);
+begin
+  // Formatação de Compatibilidade Microsoft e Linux
+  {$IFDEF LINUX}
 
+  // Formatação de Moedas
+  CurrencyString    := 'R$';
+  CurrencyFormat    := 2;
+  DecimalSeparator  := ',';
+  ThousandSeparator := '.';
 
+  // Formatação de Datas
+  DateSeparator     := '/';
+  ShortDateFormat   := 'dd/mm/yyyy';
 
+  {$ENDIF}
+end;
 
 end.
 

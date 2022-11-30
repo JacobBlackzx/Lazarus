@@ -1,0 +1,75 @@
+object frmprincipal: Tfrmprincipal
+  Left = 624
+  Height = 600
+  Top = 250
+  Width = 900
+  Caption = 'UnixTec - Fluxo de Caixa'
+  ClientHeight = 600
+  ClientWidth = 900
+  object pnpEsquerda: TPanel
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 175
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 600
+    ClientWidth = 175
+    Color = 3135279
+    ParentColor = False
+    TabOrder = 0
+    object btnContas: TSpeedButton
+      Left = 10
+      Height = 35
+      Top = 16
+      Width = 150
+      Caption = 'Contas'
+    end
+    object btnPlanos: TSpeedButton
+      Left = 10
+      Height = 35
+      Top = 56
+      Width = 150
+      Caption = 'Planos'
+    end
+    object btnLancamento: TSpeedButton
+      Left = 10
+      Height = 35
+      Top = 96
+      Width = 150
+      Caption = 'Lançamentos'
+    end
+    object btnSair: TSpeedButton
+      Left = 10
+      Height = 35
+      Top = 536
+      Width = 150
+      Caption = 'Sair'
+      OnClick = btnSairClick
+    end
+    object btnConfigura: TSpeedButton
+      Left = 10
+      Height = 35
+      Top = 496
+      Width = 150
+      Caption = 'Configura'
+    end
+  end
+  object lblFluxoCaixa: TLabel
+    Left = 183
+    Height = 33
+    Top = 8
+    Width = 204
+    Caption = 'Fluxo de Caixa'
+    Font.Height = -27
+    Font.Name = 'Serif'
+    ParentColor = False
+    ParentFont = False
+  end
+  object shaLinha: TShape
+    Left = 183
+    Height = 2
+    Top = 50
+    Width = 700
+  end
+end

@@ -5,10 +5,23 @@ unit uprincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Buttons;
 
 type
-  TForm1 = class(TForm)
+
+  { Tfrmprincipal }
+
+  Tfrmprincipal = class(TForm)
+    lblFluxoCaixa: TLabel;
+    pnpEsquerda: TPanel;
+    shaLinha: TShape;
+    btnContas: TSpeedButton;
+    btnPlanos: TSpeedButton;
+    btnLancamento: TSpeedButton;
+    btnSair: TSpeedButton;
+    btnConfigura: TSpeedButton;
+    procedure btnSairClick(Sender: TObject);
   private
 
   public
@@ -16,11 +29,20 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmprincipal: Tfrmprincipal;
 
 implementation
 
 {$R *.lfm}
+
+{ Tfrmprincipal }
+
+procedure Tfrmprincipal.btnSairClick(Sender: TObject);
+begin
+// Construtor para habilitar evento sair do botão Sair da Tela Principal
+  ShowMessage('Até Breve !!!');
+  Application.Terminate;
+end;
 
 end.
 

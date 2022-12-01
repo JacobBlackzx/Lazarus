@@ -39,6 +39,12 @@
         <ComponentName Value="frmprincipal"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmconfigurabanco"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

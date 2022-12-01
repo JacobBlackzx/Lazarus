@@ -19,48 +19,98 @@
         <ComponentName Value="frmprincipal"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="31"/>
-        <CursorPos X="12" Y="52"/>
+        <TopLine Value="34"/>
+        <CursorPos X="26" Y="37"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmconfigurabanco"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="79"/>
+        <CursorPos Y="82"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="8">
+    <JumpHistory HistoryIndex="18">
       <Position>
         <Filename Value="view/uprincipal.pas"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="38" Column="3" TopLine="21"/>
+        <Caret Line="43" Column="3" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="37" Column="3" TopLine="20"/>
+        <Caret Line="70" Column="5" TopLine="48"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="36" Column="3" TopLine="19"/>
+        <Caret Line="55" Column="33" TopLine="42"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="38" Column="3" TopLine="21"/>
+        <Caret Line="35" Column="22" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="31" Column="26" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="61" Column="59" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="32" Column="23" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="84" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="54" Column="11" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="43" Column="2" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="67" Column="78" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="88" Column="77" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="56" Column="9" TopLine="45"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="39" Column="3" TopLine="22"/>
+        <Caret Line="78" Column="5" TopLine="60"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="40" Column="3" TopLine="23"/>
+        <Caret Line="85" Column="16" TopLine="67"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="42" Column="3" TopLine="24"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="48" Column="27" TopLine="34"/>
+        <Caret Line="89" Column="16" TopLine="82"/>
       </Position>
     </JumpHistory>
     <RunParams>

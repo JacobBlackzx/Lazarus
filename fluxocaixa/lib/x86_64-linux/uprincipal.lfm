@@ -1,69 +1,79 @@
 object frmprincipal: Tfrmprincipal
-  Left = 624
-  Height = 387
+  Left = 276
+  Height = 600
   Top = 250
-  Width = 759
-  Caption = 'Sistema Fluxo Caixa'
-  ClientHeight = 387
-  ClientWidth = 759
+  Width = 900
+  Caption = 'UnixTec - Fluxo de Caixa'
+  ClientHeight = 600
+  ClientWidth = 900
   OnCreate = FormCreate
-  object Label1: TLabel
-    Left = 168
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object pnpEsqueda: TPanel
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 170
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 600
+    ClientWidth = 170
+    Color = 3267889
+    ParentColor = False
+    TabOrder = 0
+    object btnContas: TSpeedButton
+      Left = 14
+      Height = 35
+      Top = 25
+      Width = 140
+      Caption = 'Contas'
+    end
+    object btnPlanos: TSpeedButton
+      Left = 14
+      Height = 35
+      Top = 64
+      Width = 140
+      Caption = 'Planos'
+    end
+    object btnLancamentos: TSpeedButton
+      Left = 14
+      Height = 35
+      Top = 104
+      Width = 140
+      Caption = 'Lançamentos'
+    end
+    object btnSair: TSpeedButton
+      Left = 14
+      Height = 35
+      Top = 536
+      Width = 140
+      Caption = 'Sair'
+      OnClick = btnSairClick
+    end
+    object btnConfigura: TSpeedButton
+      Left = 14
+      Height = 35
+      Top = 496
+      Width = 140
+      Caption = 'Configura'
+      OnClick = btnConfiguraClick
+    end
+  end
+  object lblFluxoCaixa: TLabel
+    Left = 184
     Height = 33
     Top = 8
-    Width = 204
-    Caption = 'Fluxo de Caixa'
+    Width = 213
+    Caption = 'Fluxo de Caixa '
     Font.Height = -27
     Font.Name = 'Serif'
     ParentColor = False
     ParentFont = False
   end
-  object Shape1: TShape
-    Left = 168
-    Height = 6
-    Top = 41
-    Width = 562
-  end
-  object pnpEsquerda: TPanel
-    Left = 0
-    Height = 387
-    Top = 0
-    Width = 154
-    Align = alLeft
-    BevelOuter = bvNone
-    ClientHeight = 387
-    ClientWidth = 154
-    Color = 1873436
-    ParentColor = False
-    TabOrder = 0
-    object btnContas: TSpeedButton
-      Left = 16
-      Height = 32
-      Top = 24
-      Width = 120
-      Caption = 'Contas'
-    end
-    object btnPlanos: TSpeedButton
-      Left = 16
-      Height = 32
-      Top = 64
-      Width = 120
-      Caption = 'Planos'
-    end
-    object btnLancamentos: TSpeedButton
-      Left = 16
-      Height = 32
-      Top = 104
-      Width = 120
-      Caption = 'Lançamentos'
-    end
-    object btnSair: TSpeedButton
-      Left = 16
-      Height = 32
-      Top = 336
-      Width = 120
-      Caption = 'Sair'
-      OnClick = btnSairClick
-    end
+  object shaLinhaPrincipal: TShape
+    Left = 184
+    Height = 2
+    Top = 48
+    Width = 700
   end
 end

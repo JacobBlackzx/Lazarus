@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons, uconfigurabanco;
+  Buttons, uconfigurabanco, utabela;
 
 type
 
@@ -26,6 +26,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
+    procedure ler_ini;
 
   public
 
@@ -33,7 +34,9 @@ type
 
 var
   frmprincipal: Tfrmprincipal;
-  cfg_arqINI: String;
+  cfg_arqINI, cfg_pathApp: String;
+  cfg_banco, cfg_servidor, cfg_usuario, cfg_senha: String;
+  cfg_porta: Integer;
 
 implementation
 
@@ -75,6 +78,8 @@ begin
 
 // Estrutura CFG
   cfg_arqINI       := ChangeFileExt(ParamStr(0),'ini');
+  cfg_pathApp      := ExtractFilePath(ParamStr(0));
+
   //ShowMessage(cfg_arqINI);
 
 end;
@@ -83,6 +88,15 @@ procedure Tfrmprincipal.FormShow(Sender: TObject);
 begin
   if not FileExists(cfg_arqINI) then
      btnConfigura.Click;
+  ler_ini;
+
+  try
+   TabGlobal.conexao.Connect;
+   ShowMessage('Conectado !!!');
+  except
+    on e: Exception do
+        ShowMessage('Erro ao conectar ao banco'+sLineBreak+e.ClassName+sLineBreak+e.Message);
+  end;
 
 end;
 
@@ -92,11 +106,11 @@ var
 begin
   ArqINI := TIniFile.Create(cfg_arqINI);
   try
-    edtBanco.Text := ArqINI.ReadString('ConexaoDB','Banco','');
-    edtServer.Text := ArqINI.ReadString('ConexaoDB','Servidor','');
-    edtPorta.Text := IntToStr(ArqINI.ReadInteger('ConexaoDB','Porta',3306));
-    edtUsuario.Text := ArqINI.ReadString('ConexaoDB','Usuario','');
-    edtSenha.Text := ArqINI.ReadString('ConexaoDB','Senha','');
+    cfg_banco    := ArqINI.ReadString('ConexaoDB','Banco','');
+    cfg_servidor := ArqINI.ReadString('ConexaoDB','Servidor','');
+    cfg_porta    := ArqINI.ReadInteger('ConexaoDB','Porta',3306);
+    cfg_usuario  := ArqINI.ReadString('ConexaoDB','Usuario','');
+    cfg_senha    := ArqINI.ReadString('ConexaoDB','Senha','');
   finally
     ArqINI.Free;
   end;

@@ -1,0 +1,17 @@
+object TabGlobal: TTabGlobal
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 200
+  HorizontalOffset = 293
+  VerticalOffset = 250
+  Width = 272
+  object conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    BeforeConnect = conexaoBeforeConnect
+    Port = 0
+    Protocol = 'MariaDB-10'
+    Left = 63
+    Top = 62
+  end
+end

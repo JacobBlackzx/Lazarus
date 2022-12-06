@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, zcomponent, uprincipal, uconfigurabanco, utabela
+  Forms, zcomponent, uprincipal, uconfigurabanco, utabela, ucad_padrao
   { you can add units after this };
 
 {$R *.res}
@@ -21,6 +21,7 @@ begin
   Application.Initialize;
   Application.CreateForm(Tfrmprincipal, frmprincipal);
   Application.CreateForm(TTabGlobal, TabGlobal);
+  Application.CreateForm(Tfrmcad_padrao, frmcad_padrao);
   Application.Run;
 end.
 

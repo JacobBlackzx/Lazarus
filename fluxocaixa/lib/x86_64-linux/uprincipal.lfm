@@ -63,10 +63,11 @@ object frmprincipal: Tfrmprincipal
     Left = 184
     Height = 33
     Top = 8
-    Width = 213
+    Width = 227
     Caption = 'Fluxo de Caixa '
     Font.Height = -27
     Font.Name = 'Serif'
+    Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
   end

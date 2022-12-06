@@ -1,0 +1,26 @@
+object frmcad_padrao: Tfrmcad_padrao
+  Left = 198
+  Height = 600
+  Top = 250
+  Width = 600
+  Caption = 'Cadastro Padrão'
+  ClientHeight = 600
+  ClientWidth = 600
+  Color = clWhite
+  Position = poMainFormCenter
+  object pnpTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 600
+    Align = alTop
+    Caption = 'Cadastro Padrão'
+    Color = 3267889
+    Font.Height = -21
+    Font.Name = 'Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

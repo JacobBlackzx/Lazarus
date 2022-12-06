@@ -38,6 +38,8 @@ end;
 
 procedure TTabGlobal.conexaoBeforeConnect(Sender: TObject);
 begin
+// Estrutura Padrão Microsoft e Linux
+//  conexao.Protocol     :='MariaDB-10';
   conexao.Database     :=cfg_banco;
   conexao.HostName     :=cfg_servidor;
   conexao.User         :=cfg_usuario;
@@ -47,7 +49,14 @@ begin
   conexao.AutoCommit   :=True;
 // Estrutura para conexão a banco de dados Microsoft
   {$IFDEF WINDOWS}
-          conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll';
+ //      if cfg_odbc = EmptyStr then
+          conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll' //dll 32bits
+ //      else
+ //        begin
+ //          conexao.Protocol:='ado'; // Banco com arquitetura 64Bots
+ //          conexao.Database:='Driver={'+cfg_odb+'}; server-'+cfg_servidor+'; Database-'+cfg_banco+''
+ //        end;
+
   {$ENDIF}
 end;
 

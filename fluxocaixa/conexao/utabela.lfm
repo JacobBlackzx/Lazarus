@@ -8,6 +8,9 @@ object TabGlobal: TTabGlobal
   object conexao: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
     BeforeConnect = conexaoBeforeConnect
     Port = 0
     Protocol = 'MariaDB-10'

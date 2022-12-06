@@ -25,6 +25,7 @@ var
   TabGlobal: TTabGlobal;
 
 implementation
+    uses uprincipal;
 
 {$R *.lfm}
 

@@ -5,7 +5,7 @@ unit utabela;
 interface
 
 uses
-  Classes, SysUtils, ZConnection;
+  Classes, SysUtils, ZConnection, Dialogs;
 
 type
 
@@ -50,6 +50,7 @@ begin
 // Estrutura para conexão a banco de dados Microsoft
   {$IFDEF WINDOWS}
  //      if cfg_odbc = EmptyStr then
+          ShowMessage(cfg_pathApp);
           conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll' //dll 32bits
  //      else
  //        begin

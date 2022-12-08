@@ -19,8 +19,8 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(Tfrmprincipal, frmprincipal);
   Application.CreateForm(TTabGlobal, TabGlobal);
+  Application.CreateForm(Tfrmprincipal, frmprincipal);
   Application.CreateForm(Tfrmcad_padrao, frmcad_padrao);
   Application.Run;
 end.

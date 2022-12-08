@@ -9,6 +9,7 @@ object frmprincipal: Tfrmprincipal
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
   object pnpEsqueda: TPanel
     Left = 0
     Height = 600

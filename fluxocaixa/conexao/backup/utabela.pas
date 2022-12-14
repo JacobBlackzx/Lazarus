@@ -5,7 +5,7 @@ unit utabela;
 interface
 
 uses
-  Classes, SysUtils, ZConnection;
+  Classes, SysUtils, ZConnection, Dialogs;
 
 type
 
@@ -49,14 +49,14 @@ begin
   conexao.AutoCommit   :=True;
 // Estrutura para conexão a banco de dados Microsoft
   {$IFDEF WINDOWS}
- //      if cfg_odbc = EmptyStr then
-          ShowMessage(cfg_pathApp);
+       if cfg_odbc = EmptyStr then
+//          ShowMessage(cfg_pathApp+'libmariadb.dll');
           conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll' //dll 32bits
- //      else
- //        begin
- //          conexao.Protocol:='ado'; // Banco com arquitetura 64Bots
- //          conexao.Database:='Driver={'+cfg_odb+'}; server-'+cfg_servidor+'; Database-'+cfg_banco+''
- //        end;
+       else
+         begin
+           conexao.Protocol:='ado'; // Banco com arquitetura 64Bots
+           conexao.Database:='Driver={mariadb ODBC 3.1 Driver}; server='+cfg_servidor+'; Database='+cfg_banco+'; User='+cfg_usuario+'; password='+cfg_senha+'; option=3;'
+         end;
 
   {$ENDIF}
 end;

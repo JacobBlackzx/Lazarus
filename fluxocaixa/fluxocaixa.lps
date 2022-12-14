@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="view/uprincipal.pas"/>
@@ -19,8 +19,9 @@
         <ComponentName Value="frmprincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <CursorPos X="38" Y="9"/>
-        <UsageCount Value="30"/>
+        <TopLine Value="38"/>
+        <CursorPos X="60" Y="38"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -31,10 +32,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="65"/>
-        <CursorPos X="3" Y="84"/>
-        <UsageCount Value="30"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="85" Y="96"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -44,9 +44,10 @@
         <ComponentName Value="TabGlobal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="42" Y="8"/>
-        <UsageCount Value="30"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="39"/>
+        <CursorPos X="72" Y="58"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -56,13 +57,13 @@
         <ComponentName Value="frmcad_padrao"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="26">
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="view/uprincipal.pas"/>
       </Position>
@@ -166,6 +167,18 @@
       </Position>
       <Position>
         <Filename Value="view/ucad_padrao.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="84" Column="3" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uconfigurabanco.pas"/>
+        <Caret Line="86" Column="3" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uprincipal.pas"/>
+        <Caret Line="29" Column="18" TopLine="20"/>
       </Position>
     </JumpHistory>
     <RunParams>

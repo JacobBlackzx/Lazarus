@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons, uconfigurabanco, utabela,ucad_padrao, IniFiles;
+  Buttons, uconfigurabanco, utabela, ucad_padrao, IniFiles;
 
 type
 
@@ -111,6 +111,7 @@ begin
     cfg_porta    := ArqINI.ReadInteger('ConexaoDB','Porta',3306);
     cfg_usuario  := ArqINI.ReadString('ConexaoDB','Usuario','');
     cfg_senha    := ArqINI.ReadString('ConexaoDB','Senha','');
+    cfg_odbc     := ArqINI.ReadString('ConexaoDB','ODBC','mariadb ODBC 3.1 Driver');
   finally
     ArqINI.Free;
   end;

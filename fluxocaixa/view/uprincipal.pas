@@ -35,7 +35,7 @@ type
 var
   frmprincipal: Tfrmprincipal;
   cfg_arqINI, cfg_pathApp: String;
-  cfg_banco, cfg_servidor, cfg_usuario, cfg_senha: String;
+  cfg_banco, cfg_servidor, cfg_usuario, cfg_senha, cfg_odbc: String;
   cfg_porta: Integer;
 
 implementation
@@ -111,6 +111,7 @@ begin
     cfg_porta    := ArqINI.ReadInteger('ConexaoDB','Porta',3306);
     cfg_usuario  := ArqINI.ReadString('ConexaoDB','Usuario','');
     cfg_senha    := ArqINI.ReadString('ConexaoDB','Senha','');
+    cfg_odbc     := ArqINI.ReadString('ConexaoDB','ODBC','mariadb ODBC 3.1 Driver');
   finally
     ArqINI.Free;
   end;

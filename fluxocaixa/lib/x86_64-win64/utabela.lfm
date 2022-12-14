@@ -1,0 +1,21 @@
+object TabGlobal: TTabGlobal
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 200
+  HorizontalOffset = 293
+  VerticalOffset = 250
+  Width = 272
+  object conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    BeforeConnect = conexaoBeforeConnect
+    Port = 0
+    Database = 'Driver={mariadb ODBC 3.1 Driver}; server=localhost; Database=fluxo_caixa; User=suporte; password=91V75h@91; option=3;'
+    Protocol = 'ado'
+    Left = 63
+    Top = 62
+  end
+end

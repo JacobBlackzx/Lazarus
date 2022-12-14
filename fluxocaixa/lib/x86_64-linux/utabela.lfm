@@ -13,7 +13,8 @@ object TabGlobal: TTabGlobal
     )
     BeforeConnect = conexaoBeforeConnect
     Port = 0
-    Protocol = 'MariaDB-10'
+    Database = 'Driver={mariadb ODBC 3.1 Driver}; server=localhost; Database=fluxo_caixa; User=suporte; password=91V75h@91; option=3;'
+    Protocol = 'ado'
     Left = 63
     Top = 62
   end

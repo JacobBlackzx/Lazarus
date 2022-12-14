@@ -93,6 +93,7 @@ begin
   finally
     ArqINI.Free;
   end;
+
 end;
 
 //

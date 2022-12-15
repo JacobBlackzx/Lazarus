@@ -39,7 +39,7 @@ end;
 procedure TTabGlobal.conexaoBeforeConnect(Sender: TObject);
 begin
 // Estrutura Padrão Microsoft e Linux
-//  conexao.Protocol     :='MariaDB-10';
+  conexao.Protocol     :='MariaDB-10';
   conexao.Database     :=cfg_banco;
   conexao.HostName     :=cfg_servidor;
   conexao.User         :=cfg_usuario;

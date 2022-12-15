@@ -55,7 +55,7 @@ begin
        else
          begin
            conexao.Protocol:='ado'; // Banco com arquitetura 64Bots
-           conexao.Database:='Driver={mariadb ODBC 3.1 Driver}; server='+cfg_servidor+'; Database='+cfg_banco+'; User='+cfg_usuario+'; password='+cfg_senha+'; option=3;'
+           conexao.Database:='Driver={'+cfg_odbc+'}; server='+cfg_servidor+'; Database='+cfg_banco+'; User='+cfg_usuario+'; password='+cfg_senha+'; option=3;'
          end;
 
   {$ENDIF}

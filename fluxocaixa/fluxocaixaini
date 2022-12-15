@@ -5,3 +5,4 @@ Porta=3306
 Usuario=suporte
 Senha=91V75h@91
 Servidor=localhost
+ODBC=mariadb ODBC 3.1 Driver

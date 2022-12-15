@@ -7,8 +7,10 @@ object frmcad_padrao: Tfrmcad_padrao
   ClientHeight = 600
   ClientWidth = 600
   Color = clWhite
+  OnCreate = FormCreate
+  OnShow = FormShow
   Position = poMainFormCenter
-  object pnpTop: TPanel
+  object pnpTitulo: TPanel
     Left = 0
     Height = 50
     Top = 0
@@ -23,90 +25,119 @@ object frmcad_padrao: Tfrmcad_padrao
     ParentFont = False
     TabOrder = 0
   end
-  object pnpInferior: TPanel
+  object pcCadastroPadrao: TPageControl
     Left = 0
-    Height = 50
-    Top = 550
+    Height = 550
+    Top = 50
     Width = 600
-    Align = alBottom
-    ClientHeight = 50
-    ClientWidth = 600
-    Color = 3267889
-    Font.Height = -21
-    Font.Name = 'Serif'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
+    ActivePage = tsCadastro
+    Align = alClient
+    TabIndex = 1
     TabOrder = 1
-    object btnIncluir: TSpeedButton
-      Left = 56
-      Height = 30
-      Top = 8
-      Width = 90
-      Caption = 'Incluir'
-      Font.Height = -16
-      Font.Name = 'Serif'
-      ParentFont = False
+    object tsPesquisa: TTabSheet
+      Caption = 'Pesquisa'
+      ClientHeight = 519
+      ClientWidth = 590
+      object pnpCadastroPadrao: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 590
+        Align = alTop
+        ClientHeight = 50
+        ClientWidth = 590
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 16
+          Height = 34
+          Top = 6
+          Width = 350
+          TabOrder = 0
+        end
+        object btnPesquisar: TSpeedButton
+          Left = 407
+          Height = 34
+          Top = 6
+          Width = 100
+          Caption = 'Pesquisa'
+        end
+      end
     end
-    object btnAlterar: TSpeedButton
-      Left = 152
-      Height = 30
-      Top = 8
-      Width = 90
-      Caption = 'Alterar'
-      Font.Height = -16
-      Font.Name = 'Serif'
-      ParentFont = False
+    object tsCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 519
+      ClientWidth = 590
+      object pnpRodape: TPanel
+        Left = 0
+        Height = 50
+        Top = 469
+        Width = 590
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 590
+        Color = 3267889
+        Font.Height = -21
+        Font.Name = 'Serif'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        object btnIncluir: TSpeedButton
+          Left = 56
+          Height = 30
+          Top = 8
+          Width = 90
+          Caption = 'Incluir'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          OnClick = btnIncluirClick
+          ParentFont = False
+        end
+        object btnAlterar: TSpeedButton
+          Left = 152
+          Height = 30
+          Top = 8
+          Width = 90
+          Caption = 'Alterar'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          OnClick = btnAlterarClick
+          ParentFont = False
+        end
+        object btnRemover: TSpeedButton
+          Left = 248
+          Height = 30
+          Top = 8
+          Width = 90
+          Caption = 'Remover'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          OnClick = btnRemoverClick
+          ParentFont = False
+        end
+        object btnSalvar: TSpeedButton
+          Left = 344
+          Height = 30
+          Top = 8
+          Width = 90
+          Caption = 'Salvar'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          OnClick = btnSalvarClick
+          ParentFont = False
+        end
+        object btnCancelar: TSpeedButton
+          Left = 440
+          Height = 30
+          Top = 8
+          Width = 90
+          Caption = 'Cancelar'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          OnClick = btnCancelarClick
+          ParentFont = False
+        end
+      end
     end
-    object btnRemover: TSpeedButton
-      Left = 248
-      Height = 30
-      Top = 8
-      Width = 90
-      Caption = 'Remover'
-      Font.Height = -16
-      Font.Name = 'Serif'
-      ParentFont = False
-    end
-    object btnSalvar: TSpeedButton
-      Left = 344
-      Height = 30
-      Top = 8
-      Width = 90
-      Caption = 'Salvar'
-      Font.Height = -16
-      Font.Name = 'Serif'
-      ParentFont = False
-    end
-    object btnCancelar: TSpeedButton
-      Left = 440
-      Height = 30
-      Top = 8
-      Width = 90
-      Caption = 'Cancelar'
-      Font.Height = -16
-      Font.Name = 'Serif'
-      ParentFont = False
-    end
-  end
-  object btnIncluir2: TSpeedButton
-    Left = 16
-    Height = 30
-    Top = 8
-    Width = 90
-    Caption = 'Incluir'
-    Font.Height = -16
-    Font.Name = 'Serif'
-    ParentFont = False
-  end
-  object btnIncluir3: TSpeedButton
-    Left = 112
-    Height = 30
-    Top = 8
-    Width = 90
-    Caption = 'Incluir'
-    Font.Height = -16
-    Font.Name = 'Serif'
-    ParentFont = False
   end
 end

@@ -9,7 +9,6 @@ object frmprincipal: Tfrmprincipal
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poMainFormCenter
-  LCLVersion = '2.2.4.0'
   object pnpEsqueda: TPanel
     Left = 0
     Height = 600
@@ -28,6 +27,7 @@ object frmprincipal: Tfrmprincipal
       Top = 25
       Width = 140
       Caption = 'Contas'
+      OnClick = btnContasClick
     end
     object btnPlanos: TSpeedButton
       Left = 14
@@ -35,6 +35,7 @@ object frmprincipal: Tfrmprincipal
       Top = 64
       Width = 140
       Caption = 'Planos'
+      OnClick = btnPlanosClick
     end
     object btnLancamentos: TSpeedButton
       Left = 14

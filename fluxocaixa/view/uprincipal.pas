@@ -22,6 +22,8 @@ type
     btnSair: TSpeedButton;
     btnConfigura: TSpeedButton;
     procedure btnConfiguraClick(Sender: TObject);
+    procedure btnContasClick(Sender: TObject);
+    procedure btnPlanosClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -39,6 +41,8 @@ var
   cfg_porta: Integer;
 
 implementation
+
+uses ucad_planoconta;
 
 {$R *.lfm}
 
@@ -58,6 +62,26 @@ begin
     frmconfigurabanco.ShowModal;
   finally
     FreeAndNil(frmconfigurabanco);
+  end;
+end;
+
+procedure Tfrmprincipal.btnContasClick(Sender: TObject);
+begin
+  frmcad_padrao := Tfrmcad_padrao.Create(Self);
+  try
+    frmcad_padrao.ShowModal;
+  finally
+    FreeAndNil(frmcad_padrao);
+  end;
+end;
+
+procedure Tfrmprincipal.btnPlanosClick(Sender: TObject);
+begin
+  frmcad_planoconta := Tfrmcad_planoconta.Create(Self);
+  try
+    frmcad_planoconta.ShowModal;
+  finally
+    FreeAndNil(frmcad_planoconta);
   end;
 end;
 

@@ -9,7 +9,9 @@ uses
   ComCtrls, StdCtrls;
 
 type
-   TCliqueBotao = (cbIncluir, cbAlterar, cbNone);
+
+  TCliqueBotao = (cbIncluir, cbAlterar, cbNone);
+
   { Tfrmcad_padrao }
 
   Tfrmcad_padrao = class(TForm)
@@ -17,13 +19,12 @@ type
     btnRemover: TSpeedButton;
     btnSalvar: TSpeedButton;
     btnCancelar: TSpeedButton;
-    edtPesquisa: TEdit;
-    pnpCadastroPadrao: TPanel;
-    pcCadastroPadrao: TPageControl;
+    edtPequisa: TEdit;
+    pcCadastro: TPageControl;
     pnpTitulo: TPanel;
     pnpRodape: TPanel;
     btnIncluir: TSpeedButton;
-    btnPesquisar: TSpeedButton;
+    btnPesquisa: TSpeedButton;
     tsPesquisa: TTabSheet;
     tsCadastro: TTabSheet;
     procedure btnAlterarClick(Sender: TObject);
@@ -31,8 +32,8 @@ type
     procedure btnIncluirClick(Sender: TObject);
     procedure btnRemoverClick(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure pcCadastroResize(Sender: TObject);
   private
     procedure botao_edicao(lFLAG:Boolean);
   public
@@ -49,7 +50,12 @@ implementation
 
 { Tfrmcad_padrao }
 
-procedure Tfrmcad_padrao.FormCreate(Sender: TObject);
+procedure Tfrmcad_padrao.FormShow(Sender: TObject);
+begin
+  botao_edicao(False);
+end;
+
+procedure Tfrmcad_padrao.pcCadastroResize(Sender: TObject);
 begin
 
 end;
@@ -63,6 +69,7 @@ end;
 procedure Tfrmcad_padrao.btnRemoverClick(Sender: TObject);
 begin
   botao_edicao(False);
+  cliqueBotao := cbNone;
 end;
 
 procedure Tfrmcad_padrao.btnSalvarClick(Sender: TObject);
@@ -79,20 +86,16 @@ end;
 procedure Tfrmcad_padrao.btnCancelarClick(Sender: TObject);
 begin
   botao_edicao(False);
-end;
-
-procedure Tfrmcad_padrao.FormShow(Sender: TObject);
-begin
-  botao_edicao(False);
+  cliqueBotao := cbNone;
 end;
 
 procedure Tfrmcad_padrao.botao_edicao(lFLAG: Boolean);
 begin
-  btnIncluir.Visible  := not lFLAG;
-  btnAlterar.Visible  := not lFLAG;
-  btnRemover.Visible  := not lFLAG;
-  btnSalvar.Visible   := lFLAG;
-  btnCancelar.Visible := lFLAG;
+  btnIncluir.Visible    := not lFLAG;
+  btnAlterar.Visible    := not lFLAG;
+  btnRemover.Visible    := not lFLAG;
+  btnSalvar.Visible     := lFLAG;
+  btnCancelar.Visible   := lFLAG;
 end;
 
 end.

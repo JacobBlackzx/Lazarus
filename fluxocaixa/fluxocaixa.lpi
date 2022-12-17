@@ -65,7 +65,7 @@
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
-        <Filename Value="view/ucad_planoconta.pas"/>
+        <Filename Value="view/ucad_plano.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmcad_planoconta"/>
         <HasResources Value="True"/>

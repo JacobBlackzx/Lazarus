@@ -42,7 +42,7 @@ var
 
 implementation
 
-uses ucad_planoconta;
+uses ucad_plano;
 
 {$R *.lfm}
 

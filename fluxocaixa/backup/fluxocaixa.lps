@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="view/uprincipal.pas"/>
@@ -19,9 +19,9 @@
         <ComponentName Value="frmprincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="70"/>
-        <CursorPos X="42" Y="80"/>
-        <UsageCount Value="54"/>
+        <TopLine Value="78"/>
+        <CursorPos X="33" Y="84"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,10 +32,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="60"/>
+        <TopLine Value="77"/>
         <CursorPos X="85" Y="96"/>
-        <UsageCount Value="54"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="conexao/utabela.pas"/>
@@ -44,9 +43,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="33"/>
+        <TopLine Value="20"/>
         <CursorPos Y="42"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="view/ucad_padrao.pas"/>
@@ -54,33 +53,39 @@
         <ComponentName Value="frmcad_padrao"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="69"/>
-        <CursorPos X="23" Y="81"/>
-        <UsageCount Value="46"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="23" Y="77"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/zeosdbo/src/dbc/ZDbcIntfs.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1797"/>
-        <CursorPos Y="1800"/>
-        <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit>
-      <Unit>
-        <Filename Value="view/ucad_planoconta.pas"/>
+        <Filename Value="view/ucad_plano.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmcad_planoconta"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="27"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="11">
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="view/uprincipal.pas"/>
+        <Caret Line="78" Column="5" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uprincipal.pas"/>
+        <Caret Line="85" Column="16" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="view/uprincipal.pas"/>
+        <Caret Line="89" Column="16" TopLine="82"/>
+      </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
         <Caret Line="102" Column="18" TopLine="89"/>
@@ -102,31 +107,86 @@
         <Caret Line="105" Column="11" TopLine="94"/>
       </Position>
       <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+      </Position>
+      <Position>
         <Filename Value="view/uprincipal.pas"/>
         <Caret Line="29" Column="18" TopLine="20"/>
       </Position>
       <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="39" Column="60" TopLine="38"/>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="30" Column="14" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="56" Column="28" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="48" Column="22" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="54" Column="20" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="65" Column="20" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="61" Column="21" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="67" Column="21" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="42" Column="16" TopLine="28"/>
+        <Caret Line="39" Column="60" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="93" Column="28" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="46" Column="29" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="67" Column="26" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="83" Column="18" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="73" Column="25" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="79" Column="24" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="91" Column="24" TopLine="71"/>
       </Position>
       <Position>
         <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="72" Column="31" TopLine="70"/>
+        <Caret Line="72" Column="29" TopLine="52"/>
       </Position>
       <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="84" Column="33" TopLine="71"/>
+        <Filename Value="view/ucad_plano.pas"/>
       </Position>
       <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="80" Column="23" TopLine="70"/>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="78" Column="23" TopLine="71"/>
       </Position>
       <Position>
-        <Filename Value="view/ucad_planoconta.pas"/>
+        <Filename Value="view/ucad_padrao.pas"/>
+        <Caret Line="77" Column="23" TopLine="70"/>
       </Position>
     </JumpHistory>
     <RunParams>

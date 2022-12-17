@@ -3,6 +3,7 @@ object frmprincipal: Tfrmprincipal
   Height = 600
   Top = 250
   Width = 900
+  BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'UnixTec - Fluxo de Caixa'
   ClientHeight = 600
   ClientWidth = 900

@@ -1,124 +1,137 @@
-object frmconfigurabanco: Tfrmconfigurabanco
+object frmConfiguraBanco: TfrmConfiguraBanco
   Left = 624
-  Height = 350
+  Height = 400
   Top = 250
-  Width = 450
+  Width = 550
   Caption = 'Configura Banco'
-  ClientHeight = 350
-  ClientWidth = 450
+  ClientHeight = 400
+  ClientWidth = 550
   OnShow = FormShow
   Position = poMainFormCenter
   object lblConfiguraBanco: TLabel
-    Left = 12
-    Height = 33
-    Top = 0
-    Width = 237
-    Caption = 'Configura Banco '
-    Font.Height = -27
+    Left = 16
+    Height = 29
+    Top = 16
+    Width = 200
+    Caption = 'Configura Banco'
+    Font.Height = -24
     Font.Name = 'Serif'
     ParentColor = False
     ParentFont = False
   end
-  object shaLinhaCB: TShape
-    Left = 12
+  object Shape1: TShape
+    Left = 8
     Height = 2
-    Top = 48
-    Width = 400
+    Top = 50
+    Width = 500
   end
   object lblBanco: TLabel
-    Left = 12
+    Left = 32
     Height = 17
-    Top = 73
-    Width = 44
-    Caption = 'Banco '
+    Top = 80
+    Width = 41
+    Caption = 'Banco'
     ParentColor = False
   end
   object edtBanco: TEdit
-    Left = 12
+    Left = 32
     Height = 34
-    Top = 96
-    Width = 180
+    Top = 112
+    Width = 230
     TabOrder = 0
   end
   object lblServidor: TLabel
-    Left = 12
+    Left = 32
     Height = 17
-    Top = 144
-    Width = 60
-    Caption = 'Servidor '
-    ParentColor = False
-  end
-  object edtServer: TEdit
-    Left = 12
-    Height = 34
     Top = 168
-    Width = 180
-    TabOrder = 1
-  end
-  object lblPorta: TLabel
-    Left = 12
-    Height = 17
-    Top = 216
-    Width = 41
-    Caption = 'Porta '
+    Width = 57
+    Caption = 'Servidor'
     ParentColor = False
   end
-  object edtPorta: TEdit
-    Left = 12
+  object edtServidor: TEdit
+    Left = 32
     Height = 34
-    Top = 240
-    Width = 80
-    NumbersOnly = True
+    Top = 200
+    Width = 230
     TabOrder = 2
   end
   object lblUsuario: TLabel
-    Left = 224
+    Left = 286
     Height = 17
-    Top = 73
-    Width = 55
-    Caption = 'Usuário '
+    Top = 80
+    Width = 52
+    Caption = 'Usuário'
     ParentColor = False
   end
   object edtUsuario: TEdit
-    Left = 224
+    Left = 286
     Height = 34
-    Top = 96
-    Width = 180
-    TabOrder = 3
+    Top = 112
+    Width = 230
+    TabOrder = 1
   end
   object lblSenha: TLabel
-    Left = 224
+    Left = 286
     Height = 17
-    Top = 144
-    Width = 43
-    Caption = 'Senha '
+    Top = 168
+    Width = 40
+    Caption = 'Senha'
     ParentColor = False
   end
   object edtSenha: TEdit
-    Left = 224
+    Left = 286
     Height = 34
-    Top = 168
-    Width = 180
+    Top = 200
+    Width = 230
     EchoMode = emPassword
     PasswordChar = '*'
+    TabOrder = 3
+  end
+  object lblPorta: TLabel
+    Left = 32
+    Height = 17
+    Top = 256
+    Width = 38
+    Caption = 'Porta'
+    ParentColor = False
+  end
+  object edtPorta: TEdit
+    Left = 32
+    Height = 34
+    Top = 288
+    Width = 80
+    NumbersOnly = True
     TabOrder = 4
   end
-  object btnSalvar: TButton
-    Left = 224
+  object btnSalvar: TSpeedButton
+    Left = 320
     Height = 35
-    Top = 288
+    Top = 345
     Width = 90
     Caption = 'Salvar'
     OnClick = btnSalvarClick
-    TabOrder = 5
   end
-  object btnCancelar: TButton
-    Left = 322
+  object btnCancelar: TSpeedButton
+    Left = 426
     Height = 35
-    Top = 288
+    Top = 344
     Width = 90
     Caption = 'Cancelar'
     OnClick = btnCancelarClick
-    TabOrder = 6
+  end
+  object lblDriverODBC: TLabel
+    Left = 288
+    Height = 17
+    Top = 256
+    Width = 83
+    Caption = 'Driver ODBC'
+    ParentColor = False
+  end
+  object edtODBC: TEdit
+    Left = 286
+    Height = 34
+    Top = 288
+    Width = 230
+    TabOrder = 5
   end
 end

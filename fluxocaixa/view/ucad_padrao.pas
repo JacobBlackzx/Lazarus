@@ -6,25 +6,26 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Buttons,
-  ComCtrls, StdCtrls;
+  ComCtrls, StdCtrls, utabela;
 
 type
-
+// Estrutura para Clique nos Botões
   TCliqueBotao = (cbIncluir, cbAlterar, cbNone);
 
   { Tfrmcad_padrao }
 
   Tfrmcad_padrao = class(TForm)
+    edtPesquisa: TEdit;
+    pgc: TPageControl;
+    pnpPesquisar: TPanel;
+    pnpRodape: TPanel;
+    pnpSuperior: TPanel;
+    btnIncluir: TSpeedButton;
     btnAlterar: TSpeedButton;
     btnRemover: TSpeedButton;
     btnSalvar: TSpeedButton;
     btnCancelar: TSpeedButton;
-    edtPequisa: TEdit;
-    pcCadastro: TPageControl;
-    pnpTitulo: TPanel;
-    pnpRodape: TPanel;
-    btnIncluir: TSpeedButton;
-    btnPesquisa: TSpeedButton;
+    btnPesquisar: TSpeedButton;
     tsPesquisa: TTabSheet;
     tsCadastro: TTabSheet;
     procedure btnAlterarClick(Sender: TObject);
@@ -33,9 +34,8 @@ type
     procedure btnRemoverClick(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure pcCadastroResize(Sender: TObject);
   private
-    procedure botao_edicao(lFLAG:Boolean);
+    procedure botao_edicao(lFLAG:boolean);
   public
 
   end;
@@ -55,21 +55,15 @@ begin
   botao_edicao(False);
 end;
 
-procedure Tfrmcad_padrao.pcCadastroResize(Sender: TObject);
-begin
-
-end;
-
 procedure Tfrmcad_padrao.btnIncluirClick(Sender: TObject);
 begin
   botao_edicao(True);
-  cliqueBotao := cbIncluir;
+  cliqueBotao:=cbIncluir;
 end;
 
 procedure Tfrmcad_padrao.btnRemoverClick(Sender: TObject);
 begin
   botao_edicao(False);
-  cliqueBotao := cbNone;
 end;
 
 procedure Tfrmcad_padrao.btnSalvarClick(Sender: TObject);
@@ -80,22 +74,21 @@ end;
 procedure Tfrmcad_padrao.btnAlterarClick(Sender: TObject);
 begin
   botao_edicao(True);
-  cliqueBotao := cbAlterar;
+  cliqueBotao:=cbAlterar;
 end;
 
 procedure Tfrmcad_padrao.btnCancelarClick(Sender: TObject);
 begin
   botao_edicao(False);
-  cliqueBotao := cbNone;
 end;
 
-procedure Tfrmcad_padrao.botao_edicao(lFLAG: Boolean);
+procedure Tfrmcad_padrao.botao_edicao(lFLAG: boolean);
 begin
-  btnIncluir.Visible    := not lFLAG;
-  btnAlterar.Visible    := not lFLAG;
-  btnRemover.Visible    := not lFLAG;
-  btnSalvar.Visible     := lFLAG;
-  btnCancelar.Visible   := lFLAG;
+  btnIncluir.Visible:=not lFLAG;
+  btnAlterar.Visible:=not lFLAG;
+  btnRemover.Visible:=not lFLAG;
+  btnSalvar.Visible:=     lFLAG;
+  btnCancelar.Visible:=   lFLAG;
 end;
 
 end.

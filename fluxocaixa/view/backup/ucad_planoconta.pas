@@ -5,19 +5,26 @@ unit ucad_planoconta;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ucad_padrao;
+  Classes, SysUtils, Forms, utabela, Controls, Graphics, Dialogs, StdCtrls, DBGrids,
+  ZDataset, ucad_padrao, DB;
 
 type
 
   { Tfrmcad_planoconta }
 
   Tfrmcad_planoconta = class(Tfrmcad_padrao)
-    cmbTipo: TComboBox;
+    cboTipo: TComboBox;
+    dsPesquisa: TDataSource;
+    dbgTela: TDBGrid;
     edtCodigo: TEdit;
     edtDescricao: TEdit;
     lblCodigo: TLabel;
     lblDescricao: TLabel;
-    Label3: TLabel;
+    lblTipo: TLabel;
+    qrPesquisa: TZQuery;
+    qrPesquisadescricao: TStringField;
+    qrPesquisaid_plano: TLongintField;
+    qrPesquisatipo: TStringField;
   private
 
   public

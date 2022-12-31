@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, zcomponent, uprincipal, uconfigurabanco, utabela, ucad_padrao, 
-ucad_plano
+ucad_planoconta
   { you can add units after this };
 
 {$R *.res}

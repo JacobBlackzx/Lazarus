@@ -1,55 +1,100 @@
 inherited frmcad_planoconta: Tfrmcad_planoconta
   Caption = 'Cadastro Plano de Conta'
-  inherited pnpTitulo: TPanel
+  inherited pnpSuperior: TPanel
     Caption = 'Cadastro Plano de Conta'
   end
-  inherited pcCadastroPadrao: TPageControl
+  inherited pgc: TPageControl
+    ActivePage = tsPesquisa
+    TabIndex = 0
+    inherited tsPesquisa: TTabSheet
+      ClientHeight = 419
+      inherited pnpPesquisar: TPanel
+        BevelOuter = bvNone
+      end
+      object dbgTela: TDBGrid[1]
+        Left = 0
+        Height = 369
+        Top = 50
+        Width = 710
+        Align = alClient
+        Color = clForm
+        Columns = <        
+          item
+            Color = clWhite
+            Font.Color = clBtnShadow
+            Title.Caption = 'id_plano'
+            Width = 70
+            FieldName = 'Codigo'
+          end        
+          item
+            Title.Caption = 'descricao'
+            Width = 250
+            FieldName = 'descricao'
+          end        
+          item
+            Font.Color = clBlack
+            Title.Caption = 'tipo'
+            Width = 50
+            FieldName = 'tipo'
+          end>
+        DataSource = dsPesquisa
+        FixedColor = clGreen
+        Flat = True
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Sawasdee'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        TitleFont.Color = clWhite
+      end
+    end
     inherited tsCadastro: TTabSheet
+      ClientHeight = 419
       object lblCodigo: TLabel[1]
-        Left = 16
+        Left = 24
         Height = 17
-        Top = 16
+        Top = 48
         Width = 48
         Caption = 'Código'
         ParentColor = False
       end
       object edtCodigo: TEdit[2]
-        Left = 16
+        Left = 24
         Height = 34
-        Top = 48
-        Width = 80
+        Top = 80
+        Width = 200
         NumbersOnly = True
         TabOrder = 1
       end
       object lblDescricao: TLabel[3]
-        Left = 16
+        Left = 24
         Height = 17
-        Top = 104
+        Top = 136
         Width = 66
         Caption = 'Descrição'
         ParentColor = False
       end
       object edtDescricao: TEdit[4]
-        Left = 16
+        Left = 24
         Height = 34
-        Top = 136
-        Width = 400
-        CharCase = ecUppercase
+        Top = 168
+        Width = 600
         TabOrder = 2
       end
-      object Label3: TLabel[5]
-        Left = 16
+      object lblTipo: TLabel[5]
+        Left = 24
         Height = 17
-        Top = 192
+        Top = 224
         Width = 30
         Caption = 'Tipo'
         ParentColor = False
       end
-      object cmbTipo: TComboBox[6]
-        Left = 16
+      object cboTipo: TComboBox[6]
+        Left = 24
         Height = 29
-        Top = 224
-        Width = 150
+        Top = 264
+        Width = 200
         ItemHeight = 0
         ItemIndex = 0
         Items.Strings = (
@@ -61,5 +106,51 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
         Text = 'Crédito'
       end
     end
+  end
+  object qrPesquisa: TZQuery[2]
+    Connection = TabGlobal.conexao
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM planos;'
+    )
+    Params = <>
+    Left = 354
+    Top = 347
+    object qrPesquisaid_plano: TLongintField
+      DisplayLabel = 'id_plano'
+      FieldKind = fkData
+      FieldName = 'Código'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrPesquisadescricao: TStringField
+      DisplayLabel = 'descricao'
+      FieldKind = fkData
+      FieldName = 'Descricao'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 80
+    end
+    object qrPesquisatipo: TStringField
+      FieldKind = fkData
+      FieldName = 'tipo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+  end
+  object dsPesquisa: TDataSource[3]
+    DataSet = qrPesquisa
+    Left = 464
+    Top = 347
   end
 end

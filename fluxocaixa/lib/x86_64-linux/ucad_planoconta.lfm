@@ -1,55 +1,54 @@
 inherited frmcad_planoconta: Tfrmcad_planoconta
   Caption = 'Cadastro Plano de Conta'
-  inherited pnpTitulo: TPanel
+  inherited pnpSuperior: TPanel
     Caption = 'Cadastro Plano de Conta'
   end
-  inherited pcCadastroPadrao: TPageControl
+  inherited pgc: TPageControl
     inherited tsCadastro: TTabSheet
       object lblCodigo: TLabel[1]
-        Left = 16
+        Left = 24
         Height = 17
-        Top = 16
+        Top = 48
         Width = 48
         Caption = 'Código'
         ParentColor = False
       end
       object edtCodigo: TEdit[2]
-        Left = 16
+        Left = 24
         Height = 34
-        Top = 48
-        Width = 80
+        Top = 80
+        Width = 200
         NumbersOnly = True
         TabOrder = 1
       end
       object lblDescricao: TLabel[3]
-        Left = 16
+        Left = 24
         Height = 17
-        Top = 104
+        Top = 136
         Width = 66
         Caption = 'Descrição'
         ParentColor = False
       end
       object edtDescricao: TEdit[4]
-        Left = 16
+        Left = 24
         Height = 34
-        Top = 136
-        Width = 400
-        CharCase = ecUppercase
+        Top = 168
+        Width = 600
         TabOrder = 2
       end
-      object Label3: TLabel[5]
-        Left = 16
+      object lblTipo: TLabel[5]
+        Left = 24
         Height = 17
-        Top = 192
+        Top = 224
         Width = 30
         Caption = 'Tipo'
         ParentColor = False
       end
-      object cmbTipo: TComboBox[6]
-        Left = 16
+      object cboTipo: TComboBox[6]
+        Left = 24
         Height = 29
-        Top = 224
-        Width = 150
+        Top = 264
+        Width = 200
         ItemHeight = 0
         ItemIndex = 0
         Items.Strings = (

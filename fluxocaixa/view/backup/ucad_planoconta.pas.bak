@@ -1,0 +1,26 @@
+unit ucad_planoconta;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ucad_padrao;
+
+type
+  Tfrmcad_planoconta = class(Tfrmcad_padrao)
+  private
+
+  public
+
+  end;
+
+var
+  frmcad_planoconta: Tfrmcad_planoconta;
+
+implementation
+
+{$R *.lfm}
+
+end.
+

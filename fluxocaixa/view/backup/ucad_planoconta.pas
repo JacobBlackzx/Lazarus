@@ -23,8 +23,9 @@ type
     lblTipo: TLabel;
     qrPesquisa: TZQuery;
     qrPesquisadescricao: TStringField;
-    qrPesquisaid_plano: TLongintField;
+    qrPesquisaid_plano1: TLongintField;
     qrPesquisatipo: TStringField;
+    procedure btnPesquisarClick(Sender: TObject);
   private
 
   public
@@ -37,6 +38,25 @@ var
 implementation
 
 {$R *.lfm}
+
+{ Tfrmcad_planoconta }
+
+procedure Tfrmcad_planoconta.btnPesquisarClick(Sender: TObject);
+begin
+  if qrPesquisa.Active then qrPesquisa.Close;
+     qrPesquisa.SQL.Clear;
+     qrPesquisa.SQL.Add('select * from planos');
+     qrPesquisa.SQL.Add('where descricao like :cPesquisa');
+     qrPesquisa.ParamByName('cPesquisa').AsString:= '%'+Trim(edtPesquisa.Text+'%');
+     try
+       qrPesquisa.Open;
+     except
+       on e: Exception do
+          ShowMessage('Erro ao realizar a pesquisa'+sLineBreak+e.ClassName+sLineBreak+ e.Message);
+     end;
+     if qrPesquisa.RecordCount <= 0; then
+        ShowMessage('Nenhum registro encontrado !');
+end;
 
 end.
 

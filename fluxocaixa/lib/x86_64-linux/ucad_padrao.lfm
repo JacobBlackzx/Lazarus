@@ -8,6 +8,7 @@ object frmcad_padrao: Tfrmcad_padrao
   ClientWidth = 720
   OnShow = FormShow
   Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
   object pnpSuperior: TPanel
     Left = 0
     Height = 50
@@ -35,7 +36,7 @@ object frmcad_padrao: Tfrmcad_padrao
     TabOrder = 1
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 419
+      ClientHeight = 416
       ClientWidth = 710
       object pnpPesquisar: TPanel
         Left = 0
@@ -67,7 +68,7 @@ object frmcad_padrao: Tfrmcad_padrao
     end
     object tsCadastro: TTabSheet
       Caption = 'Cadastro'
-      ClientHeight = 419
+      ClientHeight = 416
       ClientWidth = 710
       object pnpRodape: TPanel
         Left = 0

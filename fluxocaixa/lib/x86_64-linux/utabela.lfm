@@ -9,9 +9,14 @@ object TabGlobal: TTabGlobal
     AutoEncodeStrings = True
     Properties.Strings = (
       'AutoEncodeStrings=ON'
+      'controls_cp=CP_UTF8'
     )
     BeforeConnect = conexaoBeforeConnect
-    Port = 0
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'fluxo_caixa'
+    User = 'suporte'
+    Password = '91V75h@91'
     Protocol = 'MariaDB-10'
     Left = 112
     Top = 88

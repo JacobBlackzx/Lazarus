@@ -1,0 +1,24 @@
+object TabGlobal: TTabGlobal
+  OldCreateOrder = False
+  Height = 184
+  HorizontalOffset = 322
+  VerticalOffset = 250
+  Width = 257
+  object conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+      'controls_cp=CP_UTF8'
+    )
+    BeforeConnect = conexaoBeforeConnect
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'fluxo_caixa'
+    User = 'suporte'
+    Password = '91V75h@91'
+    Protocol = 'MariaDB-10'
+    Left = 112
+    Top = 88
+  end
+end

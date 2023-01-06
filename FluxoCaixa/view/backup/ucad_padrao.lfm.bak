@@ -1,0 +1,126 @@
+object frmcad_padrao: Tfrmcad_padrao
+  Left = 355
+  Height = 500
+  Top = 250
+  Width = 720
+  Caption = 'Cadastro Padrão'
+  ClientHeight = 500
+  ClientWidth = 720
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object pnpSuperior: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 720
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Cadastro Padrão'
+    Color = 5876819
+    Font.Height = -24
+    Font.Name = 'Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object pgc: TPageControl
+    Left = 0
+    Height = 450
+    Top = 50
+    Width = 720
+    ActivePage = tsCadastro
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 1
+    object tsPesquisa: TTabSheet
+      Caption = 'Pesquisa'
+      ClientHeight = 419
+      ClientWidth = 710
+      object pnpPesquisar: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 710
+        Align = alTop
+        ClientHeight = 50
+        ClientWidth = 710
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 16
+          Height = 34
+          Top = 8
+          Width = 400
+          TabOrder = 0
+        end
+        object btnPesquisar: TSpeedButton
+          Left = 434
+          Height = 34
+          Top = 8
+          Width = 100
+          Caption = 'Pesquisar'
+          Font.Height = -16
+          Font.Name = 'Serif'
+          ParentFont = False
+        end
+      end
+    end
+    object tsCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 419
+      ClientWidth = 710
+      object pnpRodape: TPanel
+        Left = 0
+        Height = 50
+        Top = 369
+        Width = 710
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 710
+        Color = 5876819
+        ParentColor = False
+        TabOrder = 0
+        object btnIncluir: TSpeedButton
+          Left = 96
+          Height = 35
+          Top = 10
+          Width = 90
+          Caption = 'Incluir'
+          OnClick = btnIncluirClick
+        end
+        object btnAlterar: TSpeedButton
+          Left = 200
+          Height = 35
+          Top = 10
+          Width = 90
+          Caption = 'Alterar'
+          OnClick = btnAlterarClick
+        end
+        object btnRemover: TSpeedButton
+          Left = 304
+          Height = 35
+          Top = 10
+          Width = 90
+          Caption = 'Remover'
+          OnClick = btnRemoverClick
+        end
+        object btnSalvar: TSpeedButton
+          Left = 408
+          Height = 35
+          Top = 10
+          Width = 90
+          Caption = 'Salvar'
+          OnClick = btnSalvarClick
+        end
+        object btnCancelar: TSpeedButton
+          Left = 512
+          Height = 35
+          Top = 10
+          Width = 90
+          Caption = 'Cancelar'
+          OnClick = btnCancelarClick
+        end
+      end
+    end
+  end
+end

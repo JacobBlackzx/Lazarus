@@ -1,0 +1,82 @@
+object frmprincipal: Tfrmprincipal
+  Left = 199
+  Height = 768
+  Top = 250
+  Width = 1024
+  Caption = 'Sistema FC - UnixTec'
+  ClientHeight = 768
+  ClientWidth = 1024
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  object pnpEsquerda: TPanel
+    Left = 0
+    Height = 768
+    Top = 0
+    Width = 170
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 768
+    ClientWidth = 170
+    Color = 5876819
+    ParentColor = False
+    TabOrder = 0
+    object btnContas: TSpeedButton
+      Left = 25
+      Height = 35
+      Top = 24
+      Width = 120
+      Caption = 'Contas'
+      OnClick = btnContasClick
+    end
+    object btnPlanos: TSpeedButton
+      Left = 25
+      Height = 35
+      Top = 64
+      Width = 120
+      Caption = 'Planos'
+      OnClick = btnPlanosClick
+    end
+    object btnLancamentos: TSpeedButton
+      Left = 24
+      Height = 35
+      Top = 104
+      Width = 120
+      Caption = 'Lançamentos'
+    end
+    object btnSair: TSpeedButton
+      Left = 25
+      Height = 35
+      Top = 705
+      Width = 120
+      Caption = 'Sair'
+      OnClick = btnSairClick
+    end
+    object btnConfigura: TSpeedButton
+      Left = 25
+      Height = 35
+      Top = 665
+      Width = 120
+      Caption = 'Configura'
+      OnClick = btnConfiguraClick
+    end
+  end
+  object lblFluxoDeCaixa: TLabel
+    Left = 184
+    Height = 29
+    Top = 16
+    Width = 327
+    Caption = 'Fluxo de Caixa - UnixTec'
+    Font.Height = -24
+    Font.Name = 'Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 176
+    Height = 2
+    Top = 50
+    Width = 700
+  end
+end

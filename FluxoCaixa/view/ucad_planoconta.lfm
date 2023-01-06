@@ -1,0 +1,171 @@
+inherited frmcad_planoconta: Tfrmcad_planoconta
+  Caption = 'Cadastro Plano de Conta'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited pnpSuperior: TPanel
+    Caption = 'Cadastro Plano de Conta'
+  end
+  inherited pgc: TPageControl
+    inherited tsPesquisa: TTabSheet
+      ClientHeight = 419
+      inherited pnpPesquisar: TPanel
+        BevelOuter = bvNone
+        inherited btnPesquisar: TSpeedButton
+          OnClick = btnPesquisarClick
+        end
+      end
+      object dbgTela: TDBGrid[1]
+        Left = 0
+        Height = 369
+        Top = 50
+        Width = 710
+        Align = alClient
+        Color = clForm
+        Columns = <        
+          item
+            Color = clWhite
+            Font.Color = clBtnShadow
+            Title.Caption = 'id_plano'
+            Width = 70
+            FieldName = 'id_plano'
+          end        
+          item
+            Title.Caption = 'descricao'
+            Width = 250
+            FieldName = 'descricao'
+          end        
+          item
+            Font.Color = clBlack
+            Title.Caption = 'tipo'
+            Width = 50
+            FieldName = 'tipo'
+          end>
+        DataSource = dsPesquisa
+        FixedColor = clGreen
+        FixedCols = 0
+        Flat = True
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Sawasdee'
+        Font.Style = [fsBold]
+        Options = [dgTitles, dgColumnResize, dgColumnMove, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisableDelete]
+        ParentFont = False
+        TabOrder = 1
+        TitleFont.Color = clWhite
+        TitleFont.Height = -16
+        TitleFont.Name = 'Sawasdee'
+        TitleFont.Style = [fsBold]
+      end
+    end
+    inherited tsCadastro: TTabSheet
+      ClientHeight = 419
+      inherited pnpRodape: TPanel
+        inherited btnIncluir: TSpeedButton
+          OnClick = btnIncluirClick
+        end
+        inherited btnSalvar: TSpeedButton
+          OnClick = btnSalvarClick
+        end
+      end
+      object lblCodigo: TLabel[1]
+        Left = 24
+        Height = 17
+        Top = 48
+        Width = 48
+        Caption = 'Código'
+        ParentColor = False
+      end
+      object edtCodigo: TEdit[2]
+        Left = 24
+        Height = 34
+        Top = 80
+        Width = 200
+        NumbersOnly = True
+        TabOrder = 1
+      end
+      object lblDescricao: TLabel[3]
+        Left = 24
+        Height = 17
+        Top = 136
+        Width = 66
+        Caption = 'Descrição'
+        ParentColor = False
+      end
+      object edtDescricao: TEdit[4]
+        Left = 24
+        Height = 34
+        Top = 168
+        Width = 600
+        TabOrder = 2
+      end
+      object lblTipo: TLabel[5]
+        Left = 24
+        Height = 17
+        Top = 224
+        Width = 30
+        Caption = 'Tipo'
+        ParentColor = False
+      end
+      object cboTipo: TComboBox[6]
+        Left = 24
+        Height = 29
+        Top = 264
+        Width = 200
+        ItemHeight = 0
+        ItemIndex = 0
+        Items.Strings = (
+          'C'
+          'D'
+        )
+        OnChange = cboTipoChange
+        Style = csDropDownList
+        TabOrder = 3
+        Text = 'C'
+      end
+    end
+  end
+  object qrPesquisa: TZQuery[2]
+    Connection = TabGlobal.conexao
+    SQL.Strings = (
+      'SELECT * FROM planos;'
+    )
+    Params = <>
+    Left = 354
+    Top = 347
+    object qrPesquisaid_plano1: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_plano'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrPesquisadescricao: TStringField
+      DisplayLabel = 'descricao'
+      FieldKind = fkData
+      FieldName = 'Descricao'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 80
+    end
+    object qrPesquisatipo: TStringField
+      FieldKind = fkData
+      FieldName = 'Tipo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+  end
+  object dsPesquisa: TDataSource[3]
+    DataSet = qrPesquisa
+    Left = 464
+    Top = 347
+  end
+end

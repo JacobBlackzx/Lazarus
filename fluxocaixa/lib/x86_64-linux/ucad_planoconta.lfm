@@ -1,5 +1,7 @@
 inherited frmcad_planoconta: Tfrmcad_planoconta
   Caption = 'Cadastro Plano de Conta'
+  OnClose = FormClose
+  OnCreate = FormCreate
   inherited pnpSuperior: TPanel
     Caption = 'Cadastro Plano de Conta'
   end
@@ -32,7 +34,7 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
           item
             Title.Caption = 'descricao'
             Width = 250
-            FieldName = 'Descricao'
+            FieldName = 'descricao'
           end        
           item
             Font.Color = clBlack
@@ -55,10 +57,19 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
         TitleFont.Height = -16
         TitleFont.Name = 'Sawasdee'
         TitleFont.Style = [fsBold]
+        OnDblClick = dbgTelaDblClick
       end
     end
     inherited tsCadastro: TTabSheet
       ClientHeight = 419
+      inherited pnpRodape: TPanel
+        inherited btnIncluir: TSpeedButton
+          OnClick = btnIncluirClick
+        end
+        inherited btnSalvar: TSpeedButton
+          OnClick = btnSalvarClick
+        end
+      end
       object lblCodigo: TLabel[1]
         Left = 24
         Height = 17
@@ -106,12 +117,13 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
         ItemHeight = 0
         ItemIndex = 0
         Items.Strings = (
-          'Crédito'
-          'Débito'
+          'C'
+          'D'
         )
+        OnChange = cboTipoChange
         Style = csDropDownList
         TabOrder = 3
-        Text = 'Crédito'
+        Text = 'C'
       end
     end
   end
@@ -123,7 +135,7 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
     Params = <>
     Left = 354
     Top = 347
-    object qrPesquisaid_plano1: TLongintField
+    object qrPesquisaid_plano: TLongintField
       FieldKind = fkData
       FieldName = 'id_plano'
       Index = 0
@@ -145,7 +157,7 @@ inherited frmcad_planoconta: Tfrmcad_planoconta
     end
     object qrPesquisatipo: TStringField
       FieldKind = fkData
-      FieldName = 'tipo'
+      FieldName = 'Tipo'
       Index = 2
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]

@@ -121,7 +121,7 @@ begin
 // Criar uma conexão ao banco de dados
    try
       TabGlobal.conexao.Connect;
-      ShowMessage('Conectado ...');
+      //ShowMessage('Conectado ...');
    except
      on e: Exception do
         ShowMessage('Erro ao Conectar ao banco'+sLineBreak+e.ClassName+sLineBreak+e.Message);

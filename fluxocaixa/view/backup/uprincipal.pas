@@ -44,6 +44,8 @@ var
 
 implementation
 
+uses ucad_planoconta;
+
 {$R *.lfm}
 
 { Tfrmprincipal }
@@ -79,7 +81,12 @@ end;
 
 procedure Tfrmprincipal.btnPlanosClick(Sender: TObject);
 begin
-
+  frmcad_planoconta := Tfrmcad_planoconta.Create(Self);
+  try
+    frmcad_planoconta.ShowModal;
+  finally
+    FreeAndNil(frmcad_planoconta);
+  end;
 end;
 
 procedure Tfrmprincipal.FormCreate(Sender: TObject);
